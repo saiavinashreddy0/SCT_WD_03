@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Matrix // Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="ambient-glow"></div>
+        
+        <div class="game-header">
+            <span class="sys-tag">MATRIX // LOGIC ENGINE</span>
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+
+        <div class="mode-selector">
+            <button id="modePVP" class="mode-btn active">vs Player</button>
+            <button id="modeAI" class="mode-btn">vs AI Bot</button>
+        </div>
+
+        <div class="scoreboard">
+            <div class="score-card player-x active-turn" id="scoreCardX">
+                <span class="label">X PLAYER</span>
+                <span class="score" id="scoreX">0</span>
+            </div>
+            <div class="score-card tie-card">
+                <span class="label">TIES</span>
+                <span class="score" id="scoreTies">0</span>
+            </div>
+            <div class="score-card player-o" id="scoreCardO">
+                <span class="label" id="labelO">O PLAYER</span>
+                <span class="score" id="scoreO">0</span>
+            </div>
+        </div>
+
+        <div class="matrix-board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <button id="resetBtn" class="btn-reset">Reset Arena</button>
+
+        <div class="overlay" id="resultOverlay">
+            <div class="overlay-content">
+                <h2 id="resultMessage">X Wins the Match</h2>
+                <button id="nextRoundBtn" class="btn-continue">Next Round ⚡</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
